@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./logo.png" alt="lista telefonica" />
+            <h1>Lista de Contatos</h1>
+        </header>
+        <form id="form-contatos">
+            <input type="text" id="nome-contato" placeholder="Nome do Contato" />
+            <input type="tel" id="numero-contato" placeholder="(XX) XXXXX - XXXX" required />
+            <input type="email" id="email-contato" placeholder="Email de contato">
+            <button type="submit">Adicionar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th><input id="check-contato" type="checkbox"/></th>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Numero</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th><span>Total de Contatos</span></th>
+                    <th id="media-final-resultado"><span>---</span></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+<footer><h2>&copy;Todos os direitos reservados a VictorDev - 2024</h2></footer>
+</html>
